@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint - Serviços de Pintura</title>
+    <link rel="icon" rel="preload" type="image/png" href="./imgs/favicon.png" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./imgs/logo-v2.svg" alt="Paint - logo">
+        <!-- <h1>Paint - Soluções em Pintura</h1> -->
+    </header>
+    <nav>
+        <a href="#sobre">Sobre a Empresa</a>
+        <a href="#produtos">Produtos e Serviços</a>
+        <a href="#vantagens">Vantagens e Desvantagens</a>
+        <a href="#contato">Fale Conosco</a>
+        <a href="#parceiros">Nossos Parceiros</a>
+    </nav>
+    <section id="sobre">
+        <h2>Sobre a Empresa</h2>
+        <p>A Paint é referência no mercado de pinturas, oferecendo produtos de alta qualidade e serviços especializados
+            para transformar ambientes. A Paint é uma empresa dedicada a transformar ambientes com qualidade e
+            profissionalismo. <br>
+            Trabalhamos com pintura residencial e comercial, sempre utilizando materiais de alta qualidade e técnicas
+            modernas para garantir um acabamento impecável. Nosso compromisso com a satisfação dos clientes nos levou a
+            crescer rapidamente no mercado, conquistando cada vez mais espaço e reconhecimento.
+            <br> Nosso time de especialistas está sempre pronto para entender suas necessidades e oferecer soluções
+            personalizadas para
+            seu projeto.
+        </p>
+    </section>
+    <section id="produtos">
+        <h2>Produtos e Serviços</h2>
+        <p>Oferecemos tintas para diversas superfícies, além de serviços de pintura residencial e comercial.</p>
+    </section>
+    <section id="vantagens">
+        <h2>Vantagens e Desvantagens</h2>
+        <div class="grid">
+            <div class="box positivo">
+                <h3><span class="icon">✅</span> Qualidade dos Produtos</h3>
+                <p>Utilizamos materiais de alta qualidade para garantir um acabamento impecável e duradouro.</p>
+            </div>
+
+            <div class="box negativo">
+                <h3><span class="icon">❌</span> Preço Elevado</h3>
+                <p>Por usar materiais premium, os custos podem ser mais altos do que opções mais econômicas.</p>
+            </div>
+
+            <div class="box positivo">
+                <h3><span class="icon">✅</span> Profissionalismo</h3>
+                <p>Equipe altamente treinada e comprometida em entregar o melhor serviço.</p>
+            </div>
+
+            <div class="box negativo">
+                <h3><span class="icon">❌</span> Tempo de Serviço</h3>
+                <p>Projetos mais complexos podem levar um tempo maior para serem finalizados.</p>
+            </div>
+
+            <div class="box positivo">
+                <h3><span class="icon">✅</span> Atendimento Personalizado</h3>
+                <p>Soluções sob medida para atender às necessidades de cada cliente.</p>
+            </div>
+
+            <div class="box negativo">
+                <h3><span class="icon">❌</span> Disponibilidade Geográfica</h3>
+                <p>A Paint pode ter atuação limitada a determinadas regiões.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <!-- <h2>Fale Conosco</h2> -->
+        <div class="container-form">
+            <h1>Fale Conosco</h1>
+
+            <div class="grid">
+                <div class="box">
+                    <p>Preencha o formulário abaixo com suas informações e mensagem. Nossa equipe analisará seu contato
+                        e responderá o mais rápido possível pelo e-mail ou telefone informado. Estamos sempre prontos
+                        para tirar suas dúvidas e oferecer o melhor atendimento!</p>
+                </div>
+                <div class="box">
+                    <form action="#" method="POST">
+                        <div class="box-input">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="box-input">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                        </div>
+
+                        <div class="box-input">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
+                        </div>
+
+                        <div class="box-input">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5"
+                                required></textarea>
+                        </div>
+
+                        <div class="box-input">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p>Entre em contato pelo email: contato@paint.com ou pelo telefone: (11) 9999-9999.</p>
+    </section>
+    <section id="parceiros">
+        <h2>Nossos Parceiros</h2>
+        <p>Trabalhamos com diversas marcas renomadas no setor de pinturas para garantir a melhor experiência.</p>
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Paint - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
+<script src="./script.js"></script>
