@@ -84,26 +84,29 @@
                         para tirar suas dúvidas e oferecer o melhor atendimento!</p>
                 </div>
                 <div class="box">
-                    <form action="#" method="POST">
+                    <form action="/index.html" method="POST">
                         <div class="box-input">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required
+                                class="apenas-letras" maxlength="200">
                         </div>
 
                         <div class="box-input">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required
+                                maxlength="150">
                         </div>
 
                         <div class="box-input">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" required>
+                            <label for="celular">Celular</label>
+                            <input type="tel" id="celular" name="celular" placeholder="(99) 99999-9999" required
+                                class="mask-celular apenas-numeros" maxlength="15">
                         </div>
 
                         <div class="box-input">
                             <label for="message">Mensagem</label>
                             <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5"
-                                required></textarea>
+                                maxlength="300" required></textarea>
                         </div>
 
                         <div class="box-input">
@@ -132,4 +135,7 @@
 </body>
 
 </html>
-<script src="./script.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.mask.js"></script>
+<script src="./js/carrosel.js"></script>
+<script src="./js/script.js"></script>
