@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paint - Serviços de Pintura</title>
     <link rel="icon" rel="preload" type="image/png" href="./imgs/favicon.png" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -37,6 +37,48 @@
     <section id="produtos">
         <h2>Produtos e Serviços</h2>
         <p>Oferecemos tintas para diversas superfícies, além de serviços de pintura residencial e comercial.</p>
+        <h3>Produtos</h3>
+        <div class="container flex-produto">
+            <div class="card">
+                <img src="/imgs/produto1.jpg" alt="Produto 1">
+                <h3>Tinta Acrílica</h3>
+                <p>Alta durabilidade e acabamento profissional.</p>
+                <span class="preco">R$ 49,90</span>
+            </div>
+            <div class="card">
+                <img src="/imgs/produto2.jpg" alt="Produto 2">
+                <h3>Tinta Esmalte</h3>
+                <p>Ideal para superfícies de metal e madeira.</p>
+                <span class="preco">R$ 39,90</span>
+            </div>
+            <div class="card">
+                <img src="/imgs/produto3.jpg" alt="Produto 3">
+                <h3>Tinta Látex</h3>
+                <p>Ótima cobertura para áreas internas.</p>
+                <span class="preco">R$ 29,90</span>
+            </div>
+        </div>
+        <h3>Serviços</h3>
+        <div class="container flex-produto">
+            <div class="card">
+                <!-- <img src="servico1.jpg" alt="Serviço 1"> -->
+                <h3>Pintura Residencial</h3>
+                <p>Realizamos pintura de casas e apartamentos com acabamento profissional.</p>
+                <span class="preco">R$ 139,90</span>
+            </div>
+            <div class="card">
+                <!-- <img src="servico2.jpg" alt="Serviço 2"> -->
+                <h3>Pintura Comercial</h3>
+                <p>Serviço especializado para lojas, escritórios e estabelecimentos comerciais.</p>
+                <span class="preco">R$ 199,90</span>
+            </div>
+            <div class="card">
+                <!-- <img src="servico3.jpg" alt="Serviço 3"> -->
+                <h3>Texturização de Paredes</h3>
+                <p>Aplicamos técnicas de texturização para um visual moderno e sofisticado.</p>
+                <span class="preco">R$ 89,90</span>
+            </div>
+        </div>
     </section>
     <section id="vantagens">
         <h2>Vantagens e Desvantagens</h2>
@@ -122,11 +164,26 @@
         <h2>Nossos Parceiros</h2>
         <p>Trabalhamos com diversas marcas renomadas no setor de pinturas para garantir a melhor experiência.</p>
 
-        <div class="carousel-container">
-            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="carousel-images">
+        <div class="container flex-produto">
+            <div class="img-parceiros">
+                <img src="/imgs/Apple-logo.png" alt="Apple">
             </div>
-            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="img-parceiros">
+                <img src="/imgs/Google-logo.png" alt="Google">
+            </div>
+            <div class="img-parceiros">
+                <img src="/imgs/Microsoft-Logo.png" alt="Google">
+            </div>
+            <div class="img-parceiros">
+                <img src="/imgs/Chanel-Logo.png" alt="Google">
+            </div>
+            <div class="img-parceiros">
+                <img src="/imgs/Gucci_logo.png" alt="Google">
+            </div>
+            <div class="img-parceiros">
+                <img src="/imgs/Louis-Vitton-Logo.png" alt="Google">
+            </div>
+            
         </div>
     </section>
     <footer>
@@ -137,5 +194,4 @@
 </html>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/jquery.mask.js"></script>
-<script src="./js/carrosel.js"></script>
 <script src="./js/script.js"></script>
